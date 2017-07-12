@@ -11,5 +11,5 @@ RUN apt-get update && apt-get install -y cron curl vim
 
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
 
-CMD touch /var/log/cron.log && cron && tail -f /var/log/cron.log
+CMD cron && tail -f /var/log/cron.log
 
