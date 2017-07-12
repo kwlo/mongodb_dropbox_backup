@@ -11,4 +11,4 @@ Following ENV variables must be specified:
  - `CRON_SCHEDULE` cron schedule string (Ex: "* 0 * * *" to backup the server each midnight server time)
 
 ## Check Docker Container Status
-   docker exec -it <Docker Container ID> /usr/bin/tail -f /var/log/cron.log
+    docker exec -it <Docker Container ID> /usr/bin/tail -f /var/log/cron.log
