@@ -35,4 +35,7 @@ fi
 
 echo "Dump file ${DUMP_TAR_PATH} has been created and sent to dropbox!!" >> /var/log/cron.log
 
+# Delete the dump files and tar file to save the container space
+rm -rf /dumps/
+
 exit 0
